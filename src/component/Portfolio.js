@@ -88,8 +88,8 @@ function Portfolio({ index, closeFunction }) {
             <PortfolioListGroup>
               <h2>웹 서비스</h2>
               <PortfolioList>
-                <li><span>-</span>농산물 빅테이터 서비스 'Agripa'</li>
-                <li><span>-</span>농산물 큐레이션 정기구독 서비스 'Cueat'</li>
+                <li><span>-</span>농산물 빅테이터 서비스 &lsquo;Agripa&lsquo;</li>
+                <li><span>-</span>농산물 큐레이션 정기구독 서비스 &lsquo;Cueat&lsquo;</li>
                 <li><span>-</span>국가식품클러스터진흥원 웹사이트</li>
               </PortfolioList>
             </PortfolioListGroup>
