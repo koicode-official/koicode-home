@@ -98,7 +98,7 @@ function About({ index, closeFunction }) {
         <ContentsContainer>
           <KoisLawContainer>
             <p>
-              코이의 법칙(Koi's Law)은 비단잉어 코이라는 물고기가 환경에 따라 다르게 성장하는 것을 말합니다.
+              코이의 법칙(Koi&lsquo;s Law)은 비단잉어 코이라는 물고기가 환경에 따라 다르게 성장하는 것을 말합니다.
               <br></br> 코이는 작은 어항에서는 작은 크기로 자라지만, 큰 수족관이나 연못에서는 더 크게 자랍니다. 또한, 강물에 방류하면 최대 크기까지 성장합니다.
             </p>
 
