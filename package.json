@@ -9,10 +9,25 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-three/drei": "^9.77.10",
+    "@react-three/fiber": "^8.13.4",
+    "@seregpie/three.text-sprite": "^3.2.0",
+    "@tweenjs/tween.js": "^21.0.0",
+    "axios": "^1.4.0",
     "eslint": "8.43.0",
     "eslint-config-next": "13.4.7",
     "next": "13.4.7",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-google-recaptcha": "^3.1.0",
+    "react-google-recaptcha-v3": "^1.10.1",
+    "react-loader-spinner": "^5.3.4",
+    "react-query": "^3.39.3",
+    "recoil": "^0.7.7",
+    "styled-components": "^5.3.1",
+    "three": "^0.153.0"
+  },
+  "devDependencies": {
+    "vite": "^4.3.9"
   }
 }
