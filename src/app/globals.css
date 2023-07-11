@@ -1,13 +1,13 @@
 @font-face {
   font-family: "Predendard";
-  src: url("/fonts/Pretendard/Pretendard-Medium.woff") format("woff2");
+  src: url("/fonts/Pretendard/Pretendard-Medium.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   unicode-range: U+AC00-D7A3;
 }
 @font-face {
   font-family: "Roboto";
-  src: url("/fonts/Roboto/Roboto-Medium.ttf") format("ttf");
+  src: url("/fonts/Roboto/Roboto-Medium.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   unicode-range: U+0020-007E;
