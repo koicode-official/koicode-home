@@ -200,17 +200,17 @@ function Contact({ index, closeFunction }) {
 
 
   const submitContact = async () => {
-    // if(contactContent.name.length === 0 || !contactContent.name){
-    //   alert("성함을 입력해주세요.");
-    //   return false;
-    // }else if(validateEmail(contactContent.email)===false){
-    //   alert("이메일을 올바르게 입력해주세요.");
-    //   return false;
+    if(contactContent.name?.length === 0 || !contactContent.name){
+      alert("성함을 입력해주세요.");
+      return false;
+    }else if(validateEmail(contactContent.email)===false){
+      alert("이메일을 올바르게 입력해주세요.");
+      return false;
 
-    // }else if(contactContent.text.length === 0 || !contactContent.text){
-    //   alert("문의사항을 입력해주세요.");
-    //   return false;
-    // }
+    }else if(contactContent.text?.length === 0 || !contactContent.text){
+      alert("문의사항을 입력해주세요.");
+      return false;
+    }
     setIsLoading(true);
 
 
