@@ -137,7 +137,7 @@ export default function Home() {
           <MainTitleContainer>
             <MainTitle>
               <h2>KOI-CODE</h2>
-              <p><span>코이코드</span>는 다양한 서비스 플랫폼을 위한 우수한 외주 개발 <br></br> 솔루션을 제공하는 신뢰할 수 있는 IT 회사입니다.</p>
+              <p><span>코이코드</span>는 다양한 서비스 플랫폼을 위한 우수한 외주 <br></br> 개발  솔루션을 제공하는 신뢰할 수 있는 IT 회사입니다.</p>
             </MainTitle>
           </MainTitleContainer>
           <ThreeContainer>

@@ -97,7 +97,7 @@ function Portfolio({ index, closeFunction }) {
               <h2>광고/마케팅</h2>
               <PortfolioList>
               <li><span>-</span>메르세데스 벤츠 모빌리티</li>
-              <li><span>-</span>한구관광공사</li>
+              <li><span>-</span>한국관광공사</li>
               <li><span>-</span>AT(한국농수산식품유통공사)</li>
               <li><span>-</span>CJ푸드빌(남해군)</li>
               <li><span>-</span>굽네치킨(남해군)</li>
