@@ -91,7 +91,7 @@ function About({ index, closeFunction }) {
 
 
   return (
-    <AboutWrapper rightProps={index === sphereState.index ? "0" : "150"}>
+    <AboutWrapper rightProps={index === sphereState.index ? "0" : "150"} scalceProps={index === sphereState.index ? "1" : "0"}>
       <AboutContainer>
         <Backward closeFunction={closeFunction}></Backward>
         <h2>About</h2>

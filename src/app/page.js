@@ -1,8 +1,6 @@
 "use client"
 import styled, { css } from "styled-components"
 import { useRecoilValue, useSetRecoilState } from "recoil"
-import { scrollState } from "@/state/scroll"
-import { useEffect } from "react"
 import ThreeComponent from "@/component/Three"
 import About from "@/component/About"
 import Portfolio from "@/component/Portfolio"
@@ -112,33 +110,13 @@ const MainContainer = styled.div`
 
 
 
-
 export default function Home() {
   const sphereState = useRecoilValue(shpereControlState);
-  const scrollStateInfo = useRecoilValue(scrollState);
-  const setScrollState = useSetRecoilState(scrollState);
   const setSphereState = useSetRecoilState(shpereControlState);
 
-  useEffect(() => {
-    // console.log('scrollY', scrollStateInfo.scrollY)
-  }, [scrollStateInfo.scrollY])
 
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrollState(prev => {
-        return {
-          ...prev,
-          scrollY: window.scrollY
-        }
-      })
-    };
-    handleScroll();
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+
 
   const handleClose = () => {
     setSphereState(prev => {

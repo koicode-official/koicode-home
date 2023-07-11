@@ -69,7 +69,7 @@ const PortfolioList = styled.ul`
 function Portfolio({ index, closeFunction }) {
   const sphereState = useRecoilValue(shpereControlState);
   return (
-    <PortfolioWrapper rightProps={index === sphereState.index ? "0" : "150"}>
+    <PortfolioWrapper  scalceProps={index === sphereState.index ? "1" : "0"}>
       <PortfolioContainer>
         <Backward closeFunction={closeFunction}></Backward>
         <h2>Portfolio</h2>

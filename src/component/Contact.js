@@ -25,7 +25,13 @@ const ContactInputContainer = styled.div`
 `
 const ContactInputGroup = styled.div`
   width: 365px;
-  /* width: 365px; */
+
+
+    
+  ${media.mobile`
+    width:100%;
+  `}
+
 `
 const ContactInput = styled.input`
   width  : 100%;
@@ -49,7 +55,7 @@ const ContactInput = styled.input`
   }
   
   
-  ${media.tablet`
+  ${media.mobile`
     ::placeholder{
     font-size: 14px;
     }
@@ -75,6 +81,7 @@ const ContactTextarea = styled.textarea`
 
  
   ${media.tablet`
+    width:100%;
     ::placeholder{
     font-size: 14px;
     }
@@ -244,7 +251,7 @@ function Contact({ index, closeFunction }) {
 
 
   return (
-    <ContactWrapper rightProps={index === sphereState.index ? "0" : "150"}>
+    <ContactWrapper scalceProps={index === sphereState.index ? "1" : "0"}>
       {isLoading ?
         <LoadingSpinnerContainer>
           <Oval

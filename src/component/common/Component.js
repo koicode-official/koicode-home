@@ -22,18 +22,19 @@ export const media = Object.keys(sizes).reduce((acc, label) => {
 export const Wrapper = styled.div`
   display: flex;
   justify-content: center;
-  /* align-items: center; */
   position: absolute;
-  top: 0;
+  top: 0%;
+  left:0;
   width: 100%;
   opacity: 1;
   ${props => {
-    return `left : ${props.rightProps}%;`
+    return `transform : scale(${props.scalceProps});`
   }}
-  transition:left .6s linear;
-  ${media.tablet`
-    padding: 0 40px 100px;  
+  transition:transform .8s ease; 
+  transform-origin: 50% 100%;
 
+  ${media.tablet`
+    padding: 0 40px 20px;  
   `}
   ${media.mobile`
     padding: 0 20px 60px;  
@@ -46,7 +47,7 @@ export const Container = styled.div`
   align-items: center;
   flex-direction: column;
   width: fit-content;
-  height: 100%;
+  height: fit-content;
   background: rgba(123, 123, 123, 0.45);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -68,6 +69,7 @@ export const Container = styled.div`
     }
   `}
   ${media.mobile`
+    width:100%;
     padding: 10px 15px 30px;  
     >h2{
       margin-bottom: 12px;

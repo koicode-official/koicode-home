@@ -25,9 +25,11 @@ const CanvasContainer = styled.canvas`
   width: 100%;
   height: 100%;
   ${media.tablet`
+    width:100%;
     height:500px;
   `}
   ${media.mobile`
+  width:100%;
     height:350px;
   `}
 `;
