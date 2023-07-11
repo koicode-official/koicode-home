@@ -102,7 +102,7 @@ body {
 
 body {
   /* background-color:  #F5F5F5; */
-  font-family: 'Pretendard', 'Roboto';
+  font-family: 'Pretendard', 'Roboto' !important;
   background-color: #001c30;
   color: #cccccc;
 }
