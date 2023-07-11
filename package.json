@@ -14,6 +14,7 @@
     "@seregpie/three.text-sprite": "^3.2.0",
     "@tweenjs/tween.js": "^21.0.0",
     "axios": "^1.4.0",
+    "babel-plugin-styled-components": "^2.1.4",
     "eslint": "8.43.0",
     "eslint-config-next": "13.4.7",
     "next": "13.4.7",

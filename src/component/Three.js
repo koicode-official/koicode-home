@@ -8,6 +8,8 @@ import { FontLoader } from "three/examples/jsm/loaders/FontLoader";
 import { CSS3DRenderer, CSS3DObject } from "three/examples/jsm/renderers/CSS3DRenderer";
 import { useRecoilValue, useSetRecoilState } from "recoil"
 import { shpereControlState } from "@/state/sphere";
+import { commonState } from "@/state/common";
+
 import styled from "styled-components";
 import TWEEN from "@tweenjs/tween.js";
 import { LessDepth } from "three";
@@ -38,7 +40,7 @@ const TextStyledCompo = styled.div`
   }
 `;
 
-function ThreeComponent() {
+function ThreeComponent({ renderState }) {
   const canvasRef = useRef(null);
   const containerRef = useRef(null);
   const handleClickRef = useRef();
@@ -59,6 +61,7 @@ function ThreeComponent() {
       height: window.innerHeight,
     });
   }, []);
+  const setCommonStateInfo = useSetRecoilState(commonState);
 
   useEffect(() => {
     window.addEventListener('resize', handleResize);
@@ -82,8 +85,8 @@ function ThreeComponent() {
       1,
       1000
     );
-    
-    if(windowSize.width < 500) {
+
+    if (windowSize.width < 500) {
       cameraRef.current.position.x = initCameraPosition.x * 1.1;
       cameraRef.current.position.y = initCameraPosition.y * 1.1;
       cameraRef.current.position.z = initCameraPosition.z * 1.1;
@@ -317,9 +320,9 @@ function ThreeComponent() {
   }, [windowSize]);
 
 
-useEffect(()=>{
-  console.log('cameraRef.current', cameraRef.current)
-},[cameraRef])
+  useEffect(() => {
+    console.log('cameraRef.current', cameraRef.current)
+  }, [cameraRef])
 
   useEffect(() => {
     if (sphereState.index === null) {
@@ -339,8 +342,15 @@ useEffect(()=>{
 
 
   useEffect(() => {
-    const container = containerRef.current;
 
+    setCommonStateInfo(prev => {
+      return {
+        ...prev,
+        isLoading: false,
+      }
+    })
+
+    const container = containerRef.current;
     const handleClickWithRef = (event) => {
       handleClickRef.current && handleClickRef.current(event);
     }

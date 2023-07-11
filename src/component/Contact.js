@@ -12,6 +12,7 @@ import { useRouter } from "next/navigation"
 import { Oval } from 'react-loader-spinner'
 
 
+
 const ContactWrapper = styled(Wrapper)``
 const ContactContainer = styled(Container)``
 const ContactInputContainer = styled.div`
@@ -153,7 +154,6 @@ function Contact({ index, closeFunction }) {
   const { refetch: sendEamilRefetch } = useQuery("sendEamil", sendEamil, {
     enabled: false,
     onSuccess: response => {
-      console.log("response", response)
       if (response.data.status === "success") {
         console.log('response.data', response.data)
         setIsLoading(false)

@@ -6,8 +6,11 @@ export const shpereControlState = atom({
   default: {
     index: null,
     active: false,
+    render: false,
   }
 })
+
+
 
 
 
